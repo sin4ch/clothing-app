@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "Geist Mono";
+    src: url("./fonts/GeistMono-Variable.woff2") format("woff2");
+    font-weight: 200 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    font-family: "Geist Mono", monospace;
+    font-variant-ligatures: common-ligatures no-discretionary-ligatures
+      historical-ligatures contextual;
+    font-feature-settings:
+        "ss11" on,
+        "calt" on;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    color: white;
+    background-color: black;
+    margin: 0 12vw;
+    /*border: 1px solid white;*/
+    height: 100%;
+    overflow: hidden;
+}
+
+header {
+    /*border: 1px solid white;*/
+    text-align: center;
+    padding: 4vw;
+}
+
+header > img {
+    width: 8vw;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+body > div {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+nav {
+    /*border: 1px solid white;*/
+    padding: 0px 8px;
+}
+
+ul {
+    margin: 0px;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    text-align: right;
+    font-weight: 200;
+}
+
+li a {
+    color: #ffffff55;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: red;
+    color: white
+}
+
+li a.active {
+    font-weight: 500;
+    color: white;
+}
+
+main {
+    /*border: 1px solid white;*/
+    display: grid;
+    padding: 0px 4px;
+    grid-template-columns: repeat(3, 1fr);
+    height: 76vh;
+    justify-items: center;
+    overflow-y: auto;
+}
+
+main > div {
+    width: 300px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border: 1px solid transparent;
+}
+
+div > p {
+    min-height: 2.4em;
+    overflow-wrap: anywhere;
+    padding: 8px;
+}
+
+main > div img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 8px;
+}
+
+main > div:hover {
+    border-color: #ffffff33;
+}
